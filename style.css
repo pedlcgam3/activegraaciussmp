@@ -339,7 +339,7 @@ body::after {
 
 .ip-value {
   font-family: 'Press Start 2P', monospace;
-  font-size: clamp(0.8rem, 3.5vw, 1.3rem);
+  font-size: clamp(0.8rem, 3.5vw, 1.2rem);
   color: var(--green);
   text-shadow: 0 0 8px var(--green);
   word-break: break-all;
