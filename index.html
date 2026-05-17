@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Algo está chegando...</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container" id="main-container">
+    <div class="header">
+      <p class="label-top">// TRANSMISSÃO INTERCEPTADA //</p>
+      <h1 class="title">ALGO ESTÁ<br/>CHEGANDO</h1>
+      <p class="subtitle">prepare-se.</p>
+    </div>
+
+    <div class="countdown-wrapper" id="countdown-wrapper">
+      <div class="countdown" id="countdown">
+        <div class="time-block">
+          <div class="time-value" id="hours">00</div>
+          <div class="time-label">HORAS</div>
+        </div>
+        <div class="sep">:</div>
+        <div class="time-block">
+          <div class="time-value" id="minutes">00</div>
+          <div class="time-label">MINUTOS</div>
+        </div>
+        <div class="sep">:</div>
+        <div class="time-block">
+          <div class="time-value" id="seconds">00</div>
+          <div class="time-label">SEGUNDOS</div>
+        </div>
+      </div>
+
+      <div style="margin-top:1.5rem;">
+        <div class="progress-section">
+          <div class="progress-label">
+            <span>PROGRESSO</span>
+            <span id="pct">0%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="terminal">
+      <span id="terminal-text"></span><span class="cursor"></span>
+    </div>
+
+    <p class="footer-text">NÃO COMPARTILHE — ACESSO RESTRITO</p>
+  </div>
+
+  <!-- REVEAL OVERLAY -->
+  <div class="reveal-overlay" id="reveal-overlay">
+    <div class="reveal-title">🎮 O SERVIDOR<br/>ESTÁ ABERTO 🎮</div>
+    <div class="ip-card">
+      <div class="ip-row">
+        <span class="ip-type">☕ JAVA EDITION</span>
+        <span class="ip-value" id="ip-java"></span>
+      </div>
+      <div class="ip-divider"></div>
+      <div class="ip-row">
+        <span class="ip-type">🪨 BEDROCK EDITION</span>
+        <span class="ip-value" id="ip-bedrock"></span>
+      </div>
+    </div>
+    <p class="reveal-sub">acesso liberado por 24 horas — não desperdice.</p>
+    <p class="reveal-blink">⚠ ACESSO EXPIRA EM 24H ⚠</p>
+  </div>
+
+  <!-- Particles container -->
+  <div class="particles" id="particles"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
