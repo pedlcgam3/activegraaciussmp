@@ -4,7 +4,7 @@
 
 // Data e hora em que o timer deve ZERAR (horário local do seu PC)
 // Formato: new Date('YYYY-MM-DDTHH:MM:SS')
-const TARGET_DATE = new Date('2026-05-18T03:17:52');
+const TARGET_DATE = new Date('2026-05-19T03:17:52');
 
 // IPs do servidor
 document.getElementById('ip-java').textContent    = 'java.seuservidor.net:25565';
