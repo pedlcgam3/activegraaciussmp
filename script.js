@@ -4,11 +4,11 @@
 
 // Data e hora em que o timer deve ZERAR (horário local do seu PC)
 // Formato: new Date('YYYY-MM-DDTHH:MM:SS')
-const TARGET_DATE = new Date('2026-05-19T03:17:52');
+const TARGET_DATE = new Date('2026-05-19T03:45:00');
 
 // IPs do servidor
-document.getElementById('ip-java').textContent    = 'java.seuservidor.net:25565';
-document.getElementById('ip-bedrock').textContent = 'bedrock.seuservidor.net:19132';
+document.getElementById('ip-java').textContent    = 'GraciusSmp.bed.net.br';
+document.getElementById('ip-bedrock').textContent = 'GraciusSmp.bed.net.br Porta: 13105';
 
 // ============================================================
 
@@ -101,11 +101,14 @@ function tick() {
   }
 
   // barra de progresso
-  const elapsed = Math.max(0, totalDuration - diff);
-  const pct = Math.min(100, (elapsed / totalDuration) * 100);
-  document.getElementById('progress-fill').style.width = pct.toFixed(2) + '%';
-  document.getElementById('pct').textContent = pct.toFixed(0) + '%';
+  const totalDuration = 100 * 60 * 60 * 1000; // 100h em ms
 
+// ... (dentro da função tick, no final)
+
+const elapsed = totalDuration - diff;
+const pct = Math.min(100, (elapsed / totalDuration) * 100);
+document.getElementById('progress-fill').style.width = pct.toFixed(2) + '%';
+document.getElementById('pct').textContent = pct.toFixed(0) + '%';
   setTimeout(tick, 1000);
 }
 
